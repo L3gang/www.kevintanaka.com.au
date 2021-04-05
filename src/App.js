@@ -1,25 +1,108 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useLayoutEffect } from "react";
+import DarkBlueLine from "./components/DarkBlueLine";
+import LightBlueLine from "./components/LightBlueLine";
+import Skill from "./components/Skills";
+import SocialButton from "./components/SocialButton";
+import logo from "./assets/kvintanaka-2-logo.svg";
+import MessageManager from "./components/MessageManager";
+import ComssaPromotion from "./components/ComssaPromotion";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [orientation, setOrientation] = useState("");
+
+	useLayoutEffect(() => {
+		setOrientation(getWindowOrientationn());
+	}, []);
+
+	if (true) {
+		return (
+			<>
+				<LightBlueLine />
+				<br />
+				<br />
+				<br />
+				<br />
+				<div className="container">
+					<div className="row ">
+						<div id="left-side" className="col">
+							<br />
+							<div className="row">
+								<Logo />
+							</div>
+							<br />
+							<br />
+							<div className="row">
+								<Skill />
+							</div>
+							<br />
+
+							<br />
+							<br />
+							<div className="row">
+								<div className="col-3">
+									<div>
+										<small>Contact now</small>
+									</div>
+									<br />
+									<SocialButton
+										title="LinkedIn"
+										logo="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"
+										url="https://www.linkedin.com/in/kvintanaka/"
+										height="80px"
+										width="80px"
+									/>
+								</div>
+								<div className="col-2 d-flex justify-content-center align-items-center"></div>
+								<div className="col">
+									<div>
+										<small>Leave a message</small>
+									</div>
+									<br />
+									<MessageManager />
+									<br />
+								</div>
+							</div>
+
+							<br />
+						</div>
+						<div id="right-side" className="col">
+							<ComssaPromotion />
+						</div>
+					</div>
+				</div>
+				<DarkBlueLine />
+			</>
+		);
+	} else {
+		return "Portrait mode is yet to be supported";
+	}
+}
+
+function getWindowOrientationn() {
+	if (window.innerHeight > window.innerWidth) {
+		return "Portrait";
+	} else {
+		return "Landscape";
+	}
+}
+
+function CollaborationArchive() {
+	return (
+		<>
+			<p style={{ fontFamily: "Georgia" }}>
+				“I believe together we can, everyone have their own strength and
+				combined we will surely achieve a greater result.”
+			</p>
+			<h2 className="d-flex justify-content-end">
+				LET'S C O L L A B O R A T E !
+			</h2>
+			<div style={{}}></div>
+		</>
+	);
+}
+
+function Logo() {
+	return <img src={logo} height="80px" />;
 }
 
 export default App;

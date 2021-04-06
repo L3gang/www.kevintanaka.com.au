@@ -1,7 +1,7 @@
 export default function () {
 	return (
 		<div
-			style={{ animation: "initial-slide-up 0.9s forwards ease-in-out" }}
+			style={{ animation: "initial-appearance 1.5s forwards ease-in-out" }}
 			className="container"
 		>
 			<div className="row">

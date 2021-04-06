@@ -106,7 +106,7 @@ function Logo() {
 	return (
 		<img
 			style={{
-				animation: "initial-slide-right 2s forwards ease-in-out",
+				animation: "initial-slide-right 1.5s forwards ease-in-out",
 			}}
 			src={logo}
 			height="80px"

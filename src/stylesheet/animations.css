@@ -4,6 +4,12 @@
   animation-iteration-count: infinite;
 }
 
+@keyframes initial-appearance {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 @keyframes initial-slide-right {
   from {
     transform: translateX(-10%);

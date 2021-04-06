@@ -1,26 +1,33 @@
 import { useState } from "react";
+import "../stylesheet/animations.css";
 import logo from "../assets/C_Reversed.svg";
 
 export default function () {
 	return (
 		<>
-			<div className="media my-2">
-				<ComssaLogo />
-				<div className="media-body ml-4">
-					<h1 className="h3">ComSSA Open-Source Project</h1>
-					<p>
-						A newly created initiative in 2021 to increase engagement within
-						computing student in Curtin University. <br />
-						Paid and community project now being developed.
-					</p>
-					<h5>
-						Exclusive to ComSSA Membership <br />
-						So, <a href="https://www.comssa.org.au/join/">Join Now</a>
-					</h5>
-					<small>
-						Want to know more? You can leave me a message or another fellow
-						committee
-					</small>
+			<div
+				style={{
+					animation: "initial-slide-up 0.9s forwards ease-in-out",
+				}}
+			>
+				<div className=" media my-2">
+					<ComssaLogo />
+					<div className="media-body ml-4">
+						<h1 className="h3">ComSSA Open-Source Project</h1>
+						<p>
+							A newly created initiative in 2021 to increase engagement within
+							computing student in Curtin University. <br />
+							Paid and community project now being developed.
+						</p>
+						<h5>
+							Exclusive to ComSSA Membership <br />
+							So, <a href="https://www.comssa.org.au/join/">Join Now</a>
+						</h5>
+						<small>
+							Want to know more? You can leave me a message or another fellow
+							committee
+						</small>
+					</div>
 				</div>
 			</div>
 		</>

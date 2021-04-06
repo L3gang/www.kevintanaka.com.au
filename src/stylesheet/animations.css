@@ -1,0 +1,54 @@
+.pulsing-linkedin:hover {
+  animation-name: pulse-light-blue;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes initial-slide-right {
+  from {
+    transform: translateX(-10%);
+    opacity: 0; }
+  to {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes initial-slide-up {
+  from {
+    transform: translateY(30%);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes pulse-light-blue {
+  0% {
+        box-shadow: 0px 0px 20px rgba(10,102,194);
+  }
+  
+
+
+
+  35% {
+    box-shadow: 0px 0px 20px rgb(0, 153, 255);
+
+  }
+
+    75% {
+    box-shadow: 0px 0px 20px rgb(0, 153, 255);
+
+  }
+
+
+
+
+  
+
+  100% {
+    box-shadow: 0px 0px 20px rgba(10,102,194);
+
+  }
+}
+
+.shadow-linkedin:hover img{
+    filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.3));
+}

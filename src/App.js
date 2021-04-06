@@ -6,6 +6,7 @@ import SocialButton from "./components/SocialButton";
 import logo from "./assets/kvintanaka-2-logo.svg";
 import MessageManager from "./components/MessageManager";
 import ComssaPromotion from "./components/ComssaPromotion";
+import "./stylesheet/effects.css";
 
 function App() {
 	const [orientation, setOrientation] = useState("");
@@ -102,7 +103,15 @@ function CollaborationArchive() {
 }
 
 function Logo() {
-	return <img src={logo} height="80px" />;
+	return (
+		<img
+			style={{
+				animation: "initial-slide-right 2s forwards ease-in-out",
+			}}
+			src={logo}
+			height="80px"
+		/>
+	);
 }
 
 export default App;

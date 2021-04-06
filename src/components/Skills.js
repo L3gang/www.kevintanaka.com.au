@@ -1,6 +1,9 @@
 export default function () {
 	return (
-		<div className="container">
+		<div
+			style={{ animation: "initial-slide-up 0.9s forwards ease-in-out" }}
+			className="container"
+		>
 			<div className="row">
 				<div className="col-4">
 					<div className="row my-2">

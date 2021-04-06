@@ -1,10 +1,10 @@
-import "../stylesheet/animation.css";
+import "../stylesheet/animations.css";
 
 export default function (props) {
 	return (
 		<a href={props.url}>
 			<div
-				className=" shadow-linkedin pulsing-linkedin d-flex justify-content-center align-items-center"
+				className="shadow-linkedin pulsing-linkedin d-flex justify-content-center align-items-center"
 				style={{
 					...lightShadow,
 					...roundedBox,
@@ -13,7 +13,6 @@ export default function (props) {
 				}}
 			>
 				<img
-					style={shadow}
 					alt={props.title}
 					src={props.logo}
 					style={{
@@ -25,10 +24,6 @@ export default function (props) {
 		</a>
 	);
 }
-
-const shadow = {
-	filter: "drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.3))",
-};
 
 const lightShadow = {
 	boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.35)",

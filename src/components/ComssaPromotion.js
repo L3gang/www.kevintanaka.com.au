@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../stylesheet/animations.css";
 import logo from "../assets/C_Reversed.svg";
 
-export default function () {
+export default () => {
 	return (
 		<>
 			<div
@@ -32,7 +32,7 @@ export default function () {
 			</div>
 		</>
 	);
-}
+};
 
 function ComssaLogo() {
 	let hover = "140px";

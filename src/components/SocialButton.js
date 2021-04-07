@@ -1,29 +1,31 @@
 import "../stylesheet/animations.css";
 
-export default function (props) {
+export default (props) => {
 	return (
-		<a href={props.url}>
-			<div
-				className="shadow-linkedin pulsing-linkedin d-flex justify-content-center align-items-center"
-				style={{
-					...lightShadow,
-					...roundedBox,
-					width: props.width,
-					height: props.height,
-				}}
-			>
-				<img
-					alt={props.title}
-					src={props.logo}
+		<>
+			<a href={props.url}>
+				<div
+					className="pulsing-linkedin d-flex justify-content-center align-items-center"
 					style={{
-						height: `calc(${props.height} * 0.7)`,
-						width: `calc(${props.width} * 0.7)`,
+						...lightShadow,
+						...roundedBox,
+						width: props.width,
+						height: props.height,
 					}}
-				/>
-			</div>
-		</a>
+				>
+					<img
+						alt={props.title}
+						src={props.logo}
+						style={{
+							height: `calc(${props.height} * 0.7)`,
+							width: `calc(${props.width} * 0.7)`,
+						}}
+					/>
+				</div>
+			</a>
+		</>
 	);
-}
+};
 
 const lightShadow = {
 	boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.35)",

@@ -1,4 +1,4 @@
-export default function () {
+export default () => {
 	return (
 		<>
 			<div
@@ -18,4 +18,4 @@ export default function () {
 			/>
 		</>
 	);
-}
+};

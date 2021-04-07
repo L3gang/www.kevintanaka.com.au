@@ -7,6 +7,7 @@ import logo from "./assets/kvintanaka-2-logo.svg";
 import MessageManager from "./components/MessageManager";
 import ComssaPromotion from "./components/ComssaPromotion";
 import "./stylesheet/effects.css";
+import RoundedBox from "./components/RoundedBox";
 
 function App() {
 	const [orientation, setOrientation] = useState("Landscape");
@@ -54,7 +55,9 @@ function App() {
 						</div>
 						<div id="right-side" className="col">
 							<div className="row my-5">
-								<ComssaPromotion />
+								<RoundedBox>
+									<ComssaPromotion />
+								</RoundedBox>
 							</div>
 						</div>
 					</div>

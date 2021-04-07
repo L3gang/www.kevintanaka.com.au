@@ -9,42 +9,30 @@ import ComssaPromotion from "./components/ComssaPromotion";
 import "./stylesheet/effects.css";
 
 function App() {
-	const [orientation, setOrientation] = useState("");
+	const [orientation, setOrientation] = useState("Landscape");
 
 	useLayoutEffect(() => {
 		setOrientation(getWindowOrientationn());
 	}, []);
 
-	if (true) {
+	if (orientation == "Landscape") {
 		return (
 			<>
 				<LightBlueLine />
-				<br />
-				<br />
-				<br />
-				<br />
 				<div className="container">
-					<div className="row ">
+					<div className="row">
 						<div id="left-side" className="col">
-							<br />
-							<div className="row">
+							<div className="row mt-5">
 								<Logo />
 							</div>
-							<br />
-							<br />
-							<div className="row">
+							<div className="row my-5">
 								<Skill />
 							</div>
-							<br />
-
-							<br />
-							<br />
-							<div className="row">
+							<div className="row mb-5">
 								<div className="col-3">
-									<div>
+									<div className="mb-3">
 										<small>Contact now</small>
 									</div>
-									<br />
 									<SocialButton
 										title="LinkedIn"
 										logo="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"
@@ -55,19 +43,19 @@ function App() {
 								</div>
 								<div className="col-2 d-flex justify-content-center align-items-center"></div>
 								<div className="col">
-									<div>
+									<div className="mb-3">
 										<small>Leave a message</small>
 									</div>
-									<br />
 									<MessageManager />
-									<br />
 								</div>
 							</div>
 
 							<br />
 						</div>
 						<div id="right-side" className="col">
-							<ComssaPromotion />
+							<div className="row my-5">
+								<ComssaPromotion />
+							</div>
 						</div>
 					</div>
 				</div>

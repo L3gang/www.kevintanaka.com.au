@@ -1,18 +1,22 @@
+import Loadable from "./Loadable";
+
 export default function () {
 	return (
 		<div
-			style={{ animation: "initial-appearance 1.5s forwards ease-in-out" }}
+			// style={{ animation: "initial-appearance 1.5s forwards ease-in-out" }}
 			className="container"
 		>
 			<div className="row">
 				<div className="col-4">
 					<div className="row my-2">
 						<div className="col d-flex justify-content-end">
-							<img
-								style={small}
-								alt="Python"
-								src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-							/>
+							<Loadable>
+								<img
+									style={small}
+									alt="Python"
+									src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+								/>
+							</Loadable>
 						</div>
 						<div className="col d-flex justify-content-center">
 							<img

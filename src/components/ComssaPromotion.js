@@ -10,8 +10,8 @@ export default () => {
 					<h1 className="h3">ComSSA Open-Source Project</h1>
 					<p>
 						A newly created initiative in 2021 to increase engagement within
-						computing student in Curtin University. <br />
-						Paid and community project now being developed.
+						computing students in Curtin University. <br />
+						Paid and community projects are now being developed.
 					</p>
 					<h5>
 						Exclusive to ComSSA Membership <br />

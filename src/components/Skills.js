@@ -1,6 +1,6 @@
 import Loadable from "./Loadable";
 
-export default function () {
+export default () => {
 	return (
 		<div
 			// style={{ animation: "initial-appearance 1.5s forwards ease-in-out" }}
@@ -74,7 +74,7 @@ export default function () {
 			</div>
 		</div>
 	);
-}
+};
 
 const small = {
 	height: "25px",

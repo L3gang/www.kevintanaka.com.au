@@ -16,7 +16,7 @@ function App() {
 		setOrientation(getWindowOrientationn());
 	}, []);
 
-	if (orientation == "Landscape") {
+	if (orientation === "Landscape") {
 		return (
 			<>
 				<LightBlueLine />
@@ -99,6 +99,7 @@ function Logo() {
 			style={{
 				animation: "initial-slide-right 0.7s forwards ease-in-out",
 			}}
+			alt="Kevin Tanaka Logo"
 			src={logo}
 			height="80px"
 		/>

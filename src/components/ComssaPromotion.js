@@ -18,8 +18,8 @@ export default () => {
 						So, <a href="https://www.comssa.org.au/join/">Join Now</a>
 					</h5>
 					<small>
-						Want to know more? You can leave me a message or another fellow
-						committee
+						Want to know more? You can leave me a message or contact another
+						fellow committee at Building 314 Room 345.
 					</small>
 				</div>
 			</div>

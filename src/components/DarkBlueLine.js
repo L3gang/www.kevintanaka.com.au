@@ -1,4 +1,5 @@
-export default () => {
+// eslint-disable-next-line
+export default function DarkBlueLine() {
 	return (
 		<>
 			<div
@@ -11,4 +12,4 @@ export default () => {
 			/>
 		</>
 	);
-};
+}

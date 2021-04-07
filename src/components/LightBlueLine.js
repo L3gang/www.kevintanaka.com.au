@@ -1,4 +1,5 @@
-export default () => {
+// eslint-disable-next-line
+export default function LightBlueLine() {
 	return (
 		<>
 			<div
@@ -18,4 +19,4 @@ export default () => {
 			/>
 		</>
 	);
-};
+}

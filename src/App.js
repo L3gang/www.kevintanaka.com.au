@@ -1,4 +1,3 @@
-import { useState, useLayoutEffect } from "react";
 import DarkBlueLine from "./components/DarkBlueLine";
 import LightBlueLine from "./components/LightBlueLine";
 import Skill from "./components/Skills";
@@ -56,21 +55,6 @@ function App() {
 				</div>
 			</div>
 			<DarkBlueLine />
-		</>
-	);
-}
-
-function CollaborationArchive() {
-	return (
-		<>
-			<p style={{ fontFamily: "Georgia" }}>
-				“I believe together we can, everyone have their own strength and
-				combined we will surely achieve a greater result.”
-			</p>
-			<h2 className="d-flex justify-content-end">
-				LET'S C O L L A B O R A T E !
-			</h2>
-			<div style={{}}></div>
 		</>
 	);
 }

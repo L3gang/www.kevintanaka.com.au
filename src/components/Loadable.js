@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default (props) => {
+export default function Loadable(props) {
 	const [style, setStyle] = useState({
 		display: "none",
 		animationPlayState: "paused !important",
@@ -20,4 +20,4 @@ export default (props) => {
 			</div>
 		</>
 	);
-};
+}

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/C_Reversed.svg";
 
-export default () => {
+export default function ComssaPromotion() {
 	return (
 		<>
 			<div className=" media my-2">
@@ -25,7 +25,7 @@ export default () => {
 			</div>
 		</>
 	);
-};
+}
 
 function ComssaLogo() {
 	let hover = "140px";
@@ -47,30 +47,12 @@ function ComssaLogo() {
 		>
 			<img
 				src={logo}
+				alt="ComSSA Logo"
 				style={{
 					height: `calc(${diameter} * 0.75`,
 					width: `calc(${diameter} * 0.75`,
 				}}
 			/>
 		</div>
-	);
-}
-
-function GithubLogo() {
-	return (
-		<a
-			href="https://github.com/ComSSA"
-			style={{
-				backgroundColor: "white",
-			}}
-		>
-			<div id="comssa-repository">
-				<small>Official Repository on</small>
-				<img
-					src="https://pngimg.com/uploads/github/github_PNG15.png"
-					height="30px"
-				/>
-			</div>
-		</a>
 	);
 }

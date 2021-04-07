@@ -1,6 +1,6 @@
 import "../stylesheet/animations.css";
 
-export default (props) => {
+export default function SocialButton(props) {
 	return (
 		<>
 			<a href={props.url}>
@@ -25,7 +25,7 @@ export default (props) => {
 			</a>
 		</>
 	);
-};
+}
 
 const lightShadow = {
 	boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.35)",

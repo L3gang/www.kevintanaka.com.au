@@ -1,6 +1,6 @@
 import Loadable from "./Loadable";
 
-export default () => {
+export default function Skills() {
 	return (
 		<div
 			//
@@ -88,7 +88,7 @@ export default () => {
 			</div>
 		</div>
 	);
-};
+}
 
 const small = {
 	height: "25px",

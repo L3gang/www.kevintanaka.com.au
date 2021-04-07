@@ -1,5 +1,4 @@
 import { useState } from "react";
-import loadingImages from "../assets/Ellipsis-2.5s-200px.svg";
 
 export default function MessageManager() {
 	const [input, setInput] = useState({});
